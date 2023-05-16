@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class Base {
    public WebDriver driver;
    public void intilaizeBrowser() {
-	 System.setProperty("webdriver.chrome.driver","C:\\Users\\anjan\\eclipse-workspace\\AutomationCourse\\src\\main\\java\\Resources\\chromedriver.exe");
+	 System.setProperty("webdriver.chrome.driver","C:\\Users\\anjan\\git\\Automation\\AutomationCourse\\src\\main\\java\\Resources\\chromedriver.exe");
 	 ChromeOptions chromeOptions = new ChromeOptions();
 	 chromeOptions.addArguments("--remote-allow-origins=*");
 	 driver = new ChromeDriver(chromeOptions);
@@ -33,6 +33,7 @@ public class Base {
 		   System.out.println("TC Pass");
 	   }
    }
+ /*  
  public static void main(String args[]) {
 	 Base base = new Base();
 	 base.intilaizeBrowser();
@@ -43,4 +44,5 @@ public class Base {
 	// base.driverClose();
 	
  }
+ */
 }
