@@ -3,9 +3,13 @@ package com.obsquara.AutomationCourse;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
-public class Base {
+public class BaseTestNG {
    public WebDriver driver;
+   
+   @BeforeTest
    public void intilaizeBrowser() {
 	 System.setProperty("webdriver.chrome.driver","C:\\Users\\anjan\\git\\Automation\\AutomationCourse\\src\\main\\java\\Resources\\chromedriver.exe");
 	 ChromeOptions chromeOptions = new ChromeOptions();
@@ -14,7 +18,7 @@ public class Base {
      driver.get("https://www.amazon.in");
      driver.manage().window().maximize();
  }
-   
+   @AfterTest
    public void driverQuit() {
 	   driver.quit();
    }
@@ -35,15 +39,6 @@ public class Base {
 	   }
    }
   
- public static void main(String args[]) {
-	 Base base = new Base();
-	 base.intilaizeBrowser();
-	 base.getTitle();
-	 base.getPageSource();
-	 base.getUrl();
-	 base.driverQuit();
-	// base.driverClose();
-	
- }
+ 
  
 }

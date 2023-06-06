@@ -63,9 +63,6 @@ public class Locators extends Base{
 	driver.findElement(By.cssSelector("select#searchDropdownBox[name=url]"));
 	driver.findElement(By.cssSelector("div#pageContent[role=main]"));
 	driver.findElement(By.cssSelector("a.nav-imageHref[target=_blank]"));
-	
-	
-	
 	}
 	public void locateByLinkText() {
 	driver.findElement(By.linkText("Sell on Amazon"));
@@ -87,15 +84,18 @@ public class Locators extends Base{
     driver.findElement(By.partialLinkText("Sign"));
     driver.findElement(By.partialLinkText("miniTV"));
 	}
+	
+	
 	 public static void main(String args[]) {
 		 Locators locators= new Locators();
 		 locators.intilaizeBrowser();
 		 //locators.locateById();
 		// locators.locateByClassName();
 		 //locators.locateByName();
-		 locators.locateByCssSelector();
+		// locators.locateByCssSelector();
 		// locators.locateByLinkText();
 		 //locators.loacteByPartialLinkText();
+		 
 		 locators.driverQuit();
 	 }
 }

@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.obsquara</groupId>
-  <artifactId>AutomationCourse</artifactId>
+  <groupId>obsqura</groupId>
+  <artifactId>SeleniumTestingFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>AutomationCourse</name>
+  <name>SeleniumTestingFramework</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -19,15 +19,13 @@
   </properties>
 
   <dependencies>
-	   
-	   <!--  <dependency>
-      	<groupId>junit</groupId>
-     	<artifactId>junit</artifactId>
-      	<version>4.11</version>
-      	<scope>test</scope>
+   <!-- <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
     </dependency>-->
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-    <dependency>
+     <dependency>
     	<groupId>org.seleniumhq.selenium</groupId>
     	<artifactId>selenium-java</artifactId>
     	<version>4.7.2</version>
@@ -39,6 +37,7 @@
     <version>7.7.1</version>
     <scope>test</scope>
     </dependency>
-
   </dependencies>
+
+  
 </project>
